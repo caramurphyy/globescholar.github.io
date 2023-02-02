@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1dbbd8;
+}
+
+/*
+*site header
+*/
+
+.logo {
+    margin-left: 1vw;
+    position: relative;
+    width: 5vw;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+}
+
+.tab {
+    transition: color 300ms;
+    background-color: white;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 1.5vw;
+    color: #1dbbd8;
+    border-radius: 0.5vw;
+    letter-spacing: 0.2rem;
+    font-family: 'Calibre Web', sans-serif;
+    font-weight: 700;
+    font-size: 1.4vw;
+}
+
+
+.tab:hover {
+    color: #0893ab;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
+}
+
+/*
+* opening page 
+*/
+
+#home-image {
+    height: 40vw;
+    animation: 1s ease-out 0s 1 slide-down;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-20vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.opening-section-container {
+    position: relative;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opening-section {
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.opening-words {
+    margin-right: 20vw;
+}
+
+.slogan {
+    letter-spacing: 0.3rem;
+    font-family: 'Calibre Web', sans-serif;
+    font-weight: 700;
+    font-size: 7vw;
+    color: white;
+}
+
+.btn {
+    transition: color 300ms;
+    background-color: white;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-top: 1.5vw;
+    color: #1dbbd8;
+    border-radius: 0.5vw;
+    letter-spacing: 0.2rem;
+    font-family: 'Calibre Web', sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+.btn:hover {
+    color: #0893ab;
+}
+
+.arrow {
+    position: relative;
+    margin-top: 2vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("images/arrow.png");
+    background-size: contain;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/*
+* Info section
+*/
+.info-section {
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+}
+
+p {
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-right: 2vw;
+    color: white;
+    font-family: 'Calibre Web', sans-serif;
+    font-size: 1.8vw;
+}
+
+#mockup {
+    width: 40%;
+}
+
+
+/*
+* Extra utilities
+*/
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+    color: white;
+}
+
+
+/*
+* about page
+*/
+
+#about-bg {
+    background-image: url("images/globe-fourth.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+}
+
+.page-header {
+    letter-spacing: 0.3rem;
+    font-family: 'Calibre Web', sans-serif;
+    font-weight: 500;
+    font-size: 7vw;
+    color: white;
+    margin-top: 7vw;
+}
+
+.about-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5vw;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: -5vw 5vw 5vw -5vw;
+    text-align: left;
+}
+
+#aadit-image {
+    width: 300%;
+    border-radius: 50%;
+    margin-right: 10vw;
+}
+
+.about-description {
+    margin-right: 15vw;
+}
+
+/*
+* contact page
+*/
+
+.contact-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.contact-section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: white;
+    width: 60%;
+    border-radius: 1rem;
+}
+
+
+.contact-card-header {
+    color: #1dbbd8;
+    font-family: 'Calibre Web', sans-serif;
+    font-size: 3vw;
+    margin-right: 5vw;
+}
+
+.contact-section-container {
+    color: #0893ab;
+    font-family: 'Calibre Web', sans-serif;
+    font-size: 2vw;
+}
+
+/*
+* Extra utilities
+*/
+
+.flex-equal>* {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal>* {
+        flex: 1;
+    }
+}
